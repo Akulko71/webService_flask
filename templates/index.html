@@ -1,0 +1,8 @@
+﻿{% extends "base.html" %}
+{% block content %}
+{% if user.nickname and user.content %}
+<h1>{{user.nickname}}! {{user.content}}!</h1>
+{% else %}
+<h2>Rekruto! Давай дружить!</h2>
+{% endif %}
+{% endblock %}

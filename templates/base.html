@@ -1,0 +1,15 @@
+﻿<html>
+<meta charset="utf-8">
+<head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>webService</title>
+    {% endif %}
+</head>
+<body>
+    <div>URL with GET-requrset: <a href="/?name=Rekurto&message={{encode_msg}}">Тык!</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
